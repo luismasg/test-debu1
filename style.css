@@ -5,4 +5,36 @@
 
 .container {
     display: grid;
+
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    height: 100vh;
+    grid-template-areas: "Header Header Header"
+                         "Nav Container-left Container-right"
+                         "Nav Footer Footer" ;       
+}
+
+.item1 {
+    background: red;
+    grid-area: Header;
+}
+
+.item2 {
+    grid-area: Nav;
+    background: blue;
+
+}
+
+.item3 {
+    grid-area: Container-left;
+    background: green;
+}
+
+.item4 {
+    grid-area: Container-right;
+    background: yellow;
+}
+
+.item5 {
+    grid-area: Footer;
+    background: purple;
 }
